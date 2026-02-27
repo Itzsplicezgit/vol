@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECA Volleyball Tournament</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="volley.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('background.png') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.8);
+            height: 100%;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 1px solid white;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #cccccc;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .date-box {
+            margin-top: 20px;
+            padding: 15px 40px;
+            border: 2px solid white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 35px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid white;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="overlay">
+
+    <header>
+        <div class="logo">ECA Volleyball Tournament</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="form.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>ECA Volleyball Tournament</h1>
+        <p>
+            Three-day lunch volleyball tournament featuring four co ed teams per grade (3 males, 3 females). <br>Selected via nomination form. Format includes six-game group stage, knockouts, and final. USA Volleyball rules apply. <br>The winning Grade will receive custom ECA 2026 keychains.
+        </p>
+
+        <div class="date-box">
+            EVENT DATE: March 30 - April 1 <br>
+            TIME: During Lunch
+            <br>
+            Location: The Quad
+        </div>
+
+        <a href="form.html" class="btn">Register Now</a>
+    </section>
+
+</div>
+
+</body>
+</html>

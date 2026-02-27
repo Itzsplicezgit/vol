@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECA Volleyball Tournament - Teams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="volley.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: url('background.png') no-repeat center center/cover;
+            color: white;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+        .overlay {
+            background: rgba(0,0,0,0.8);
+            width: 100%;
+            min-height: 100vh;
+            padding-bottom: 50px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 1px solid white;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+        }
+        .logo:hover { color: #cccccc; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav ul li a:hover { color: #cccccc; }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .content h1 { font-size: 50px; font-weight: 800; margin-bottom: 40px; }
+        .teams-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .team-card {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid white;
+            border-radius: 12px;
+            padding: 20px 30px;
+            width: 250px;
+            text-align: left;
+        }
+        .team-card h2 { margin-bottom: 10px; font-size: 24px; font-weight: 800; }
+        .status {
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding: 5px 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .status.green { background-color: #28a745; color: white; }
+        .status.red { background-color: #dc3545; color: white; }
+        .player { margin-bottom: 8px; font-weight: 400; }
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; }
+            .content h1 { font-size: 36px; }
+            .teams-container { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+<div class="overlay">
+    <header>
+        <a href="index.html" class="logo">ECA Volleyball Tournament</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="form.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <h1>Teams</h1>
+        <div class="teams-container">
+            <div class="team-card">
+                <h2>Team 1</h2>
+                <div class="status red">Still not created</div>
+                <div class="player">Player 1</div>
+                <div class="player">Player 2</div>
+                <div class="player">Player 3</div>
+                <div class="player">Player 4</div>
+                <div class="player">Player 5</div>
+                <div class="player">Player 6</div>
+            </div>
+            <div class="team-card">
+                <h2>Team 2</h2>
+                <div class="status red">Still not created</div>
+                <div class="player">Player 1</div>
+                <div class="player">Player 2</div>
+                <div class="player">Player 3</div>
+                <div class="player">Player 4</div>
+                <div class="player">Player 5</div>
+                <div class="player">Player 6</div>
+            </div>
+            <div class="team-card">
+                <h2>Team 3</h2>
+                <div class="status red">Still not created</div>
+                <div class="player">Player 1</div>
+                <div class="player">Player 2</div>
+                <div class="player">Player 3</div>
+                <div class="player">Player 4</div>
+                <div class="player">Player 5</div>
+                <div class="player">Player 6</div>
+            </div>
+            <div class="team-card">
+                <h2>Team 4</h2>
+                <div class="status red">Still not created</div>
+                <div class="player">Player 1</div>
+                <div class="player">Player 2</div>
+                <div class="player">Player 3</div>
+                <div class="player">Player 4</div>
+                <div class="player">Player 5</div>
+                <div class="player">Player 6</div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

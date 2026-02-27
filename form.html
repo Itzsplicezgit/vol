@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECA Volleyball Tournament - Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="volley.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('background.png') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.8);
+            height: 100%;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 1px solid white;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo:hover {
+            color: #cccccc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #cccccc;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            font-weight: 800;
+            margin-bottom: 40px;
+        }
+
+        .grade-buttons {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .grade-btn {
+            padding: 15px 45px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid white;
+            transition: 0.3s;
+        }
+
+        .grade-btn:hover {
+            background: transparent;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .content h1 {
+                font-size: 36px;
+            }
+
+            .grade-buttons {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="overlay">
+
+    <header>
+        <a href="index.html" class="logo">ECA Volleyball Tournament</a>
+        <nav>
+            <ul>
+  <li><a href="index.html">Home</a></li>
+    <li><a href="teams.html">Teams</a></li>
+    <li><a href="form.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Select Your Grade Level</h1>
+
+        <div class="grade-buttons">
+            <a href="https://forms.gle/ZTmLz6138uKycLQL9" target="_blank" class="grade-btn">9th Grade Form</a>
+            <a href="https://forms.gle/RAQiKyiX3HRLwcSz8" target="_blank" class="grade-btn">10th Grade Form</a>
+            <a href="https://forms.gle/uqE1VV6G5jTiSXf36" target="_blank" class="grade-btn">11th Grade Form</a>
+            <a href="https://forms.gle/A7C5J4bjoR2XD3LKA" target="_blank" class="grade-btn">12th Grade Form</a>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
